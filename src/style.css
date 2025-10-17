@@ -1,0 +1,61 @@
+
+@import "tailwindcss";
+
+@theme inline {
+    --color-white: var(--clr-white);
+    --color-black: var(--clr-black);
+    --color-red: var(--clr-red);
+    --color-gray-100: var(--clr-gray-100);
+    --color-gray-200: var(--clr-gray-200);
+    --color-gray-500: var(--clr-gray-500);
+
+    --font-sans: 'Helvetica', sans-serif;
+    --font-heading: 'Interstate', sans-serif;
+}
+
+@layer base {
+    :root {
+        --clr-white: #ffffff;
+        --clr-black: #050505;
+        --clr-red: #CC2A2C;
+        --clr-gray-100: #F3F3F3;
+        --clr-gray-200: #E9E9E9;
+        --clr-gray-500: #AAAAAA;
+    }
+}
+@font-face {
+    font-family: 'Interstate';
+    src: url('./fonts/Interstate-Bold.woff2') format('woff2'),
+        url('./fonts/Interstate-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Interstate';
+    src: url('./fonts/Interstate-Black.woff2') format('woff2'),
+        url('./fonts/Interstate-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url('./fonts/Helvetica-Bold.woff2') format('woff2'),
+        url('./fonts/Helvetica-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('./fonts/Helvetica.woff2') format('woff2'),
+        url('./fonts/Helvetica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
