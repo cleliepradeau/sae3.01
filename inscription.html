@@ -11,7 +11,8 @@
 <body class="font-sans">
   <header>
     <nav>
-      <ul class="flex flex-wrap items-center gap-3 sm:gap-6 justify-end sm:justify-end w-full border-b border-gray-200 py-2 px-4">
+      <ul
+        class="flex flex-wrap items-center gap-3 sm:gap-6 justify-end sm:justify-end w-full border-b border-gray-200 py-2 px-4">
         <li class="flex items-center gap-2 text-sm sm:text-base">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -477,34 +478,14 @@
   </footer>
 
 
-<section class="fixed inset-0 w-full h-full z-40" style="background-color: rgba(0,0,0,0.6);"></section>
+  <section class="fixed inset-0 w-full h-full z-40" style="background-color: rgba(0,0,0,0.6);"></section>
 
-<section class="fixed inset-0 flex items-center justify-center z-50 px-4">
-  <article class="bg-white max-w-4xl w-full rounded-lg shadow-xl overflow-hidden md:flex">
-    <p>S'inscrire</p>
+  <section class="fixed inset-0 flex items-center justify-center z-50 px-4">
 
-    <!-- Colonne gauche -->
-    <aside class="md:w-1/2 p-8 bg-white">
-      <img src="src/assets/logo-redtab.png" alt="Levi's Logo" class="h-8 mb-4">
-      
-      
-      <p class="text-sm mb-4">
-        Rejoignez-nous et profitez dès maintenant de la livraison gratuite sur toutes vos commandes, 
-        d’une surprise pour votre anniversaire, de l’accès exclusif aux lancements de produits, 
-        de jeux exclusifs et plus encore.
-      </p>
+    <article class="felx flex-col bg-white max-w-4xl w-full shadow-xl overflow-hidden md:flex">
 
-      <ul class="text-sm space-y-2">
-        <li>✅ -10% sur votre commande en vous inscrivant à notre newsletter</li>
-        <li>🚚 Livraison et retours GRATUITS</li>
-        <li>🎁 Une PETITE surprise d’anniversaire chaque année</li>
-      </ul> 
-    </aside>
-
-    <!-- Colonne droite -->
-    <main class="md:w-1/2 p-8">
-      <header class="flex justify-between items-start mb-4">
-        <h3 class="font-semibold text-lg">S’inscrire maintenant</h3>
+      <header class="flex items-center p-3 bg-gray-200">
+        <h3 class="font-semibold text-lg flex-1 text-center">S’inscrire maintenant</h3>
         <button class="text-gray-400 hover:text-black transition" aria-label="Fermer">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -512,34 +493,118 @@
         </button>
       </header>
 
-      <form class="space-y-3 text-sm">
-        <section class="grid grid-cols-2 gap-3">
-          <input type="text" placeholder="Nom*" class="border p-2 rounded w-full focus:outline-none focus:ring-1 focus:ring-black">
-          <input type="text" placeholder="Prénom*" class="border p-2 rounded w-full focus:outline-none focus:ring-1 focus:ring-black">
+      <section class="flex flex-row">
+        <section class="justify-center items-center flex flex-col md:w-1/2 p-8 bg-white">
+          <img src="src/assets/logo-redtab.png" alt="Levi's Logo" class="h-8 mb-4">
+
+
+          <p class="text-sm mb-4">
+            Rejoignez-nous et profitez dès maintenant de la livraison gratuite sur toutes vos commandes,
+            d’une surprise pour votre anniversaire, de l’accès exclusif aux lancements de produits,
+            de jeux exclusifs et plus encore.
+          </p>
+
+          <ul class=" flex flex-col text-sm gap-4">
+            <li class="flex flex-row gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <g clip-path="url(#clip0_147_4586)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.015 0.210771C11.9363 0.107449 11.8205 0.0387897 11.6921 0.0193231C11.5637 -0.00014355 11.4328 0.0311098 11.327 0.106469C11.2212 0.181829 11.1489 0.295382 11.1254 0.423098C11.1019 0.550814 11.129 0.682673 11.201 0.790771C12.493 2.60077 11.881 4.31877 11.423 5.23477C11.3935 5.29354 11.376 5.35752 11.3713 5.42307C11.3666 5.48862 11.3749 5.55445 11.3956 5.61681C11.4375 5.74274 11.5278 5.84686 11.6465 5.90627C11.7651 5.96568 11.9026 5.97551 12.0285 5.93359C12.0908 5.91284 12.1485 5.88001 12.1982 5.83697C12.2478 5.79393 12.2885 5.74154 12.318 5.68277C12.831 4.65677 13.636 2.48077 12.015 0.210771ZM8.21795 1.82677C8.17183 1.77902 8.11666 1.74092 8.05565 1.71472C7.99465 1.68852 7.92904 1.67472 7.86265 1.67415C7.79626 1.67357 7.73042 1.68622 7.66897 1.71136C7.60753 1.7365 7.5517 1.77363 7.50475 1.82057C7.45781 1.86752 7.42068 1.92335 7.39554 1.98479C7.3704 2.04624 7.35775 2.11208 7.35833 2.17847C7.3589 2.24486 7.3727 2.31047 7.3989 2.37147C7.42511 2.43248 7.4632 2.48765 7.51095 2.53377C8.91595 3.93777 9.38495 5.26177 9.38395 6.39177C7.56895 5.21177 5.98195 4.79077 5.31495 5.45777C5.14795 5.62477 5.04895 5.84977 5.01295 6.12077L0.117952 17.9108C-0.370048 19.0848 0.733952 20.2958 1.94795 19.9178L14.644 15.9738C15.009 15.9668 15.306 15.8638 15.514 15.6568C16.301 14.8698 15.572 12.7998 13.868 10.5868C15.128 10.4418 16.47 10.7648 17.708 12.0038C17.8017 12.0977 17.9289 12.1505 18.0616 12.1505C18.1943 12.1506 18.3216 12.098 18.4155 12.0043C18.5093 11.9105 18.5621 11.7833 18.5622 11.6506C18.5623 11.5179 18.5097 11.3907 18.416 11.2968C16.729 9.60977 14.822 9.33177 13.134 9.69677C12.2884 8.73284 11.3521 7.85245 10.338 7.06777C10.552 5.47877 10.043 3.65277 8.21795 1.82777M14.823 14.8708L14.503 14.9698L14.488 14.9688C14.175 14.9418 13.726 14.8158 13.16 14.5478C12.244 14.1138 11.154 13.3728 10.051 12.3838C10.732 11.7968 11.697 11.1708 12.78 10.8248C13.501 11.7078 14.053 12.5628 14.404 13.3038C14.672 13.8698 14.798 14.3188 14.824 14.6318C14.834 14.7418 14.83 14.8188 14.823 14.8708ZM12.821 15.4928L1.65095 18.9628C1.56023 18.9909 1.46337 18.9926 1.37171 18.9677C1.28005 18.9428 1.19738 18.8923 1.13338 18.8221C1.06938 18.7519 1.0267 18.6649 1.01033 18.5714C0.993963 18.4778 1.00458 18.3815 1.04095 18.2938L5.36495 7.88677C5.91295 9.20777 7.05095 10.8368 8.59395 12.3788C10.035 13.8208 11.55 14.9088 12.821 15.4928ZM5.99795 6.35877C5.99795 6.3941 5.99962 6.43577 6.00295 6.48377C6.02995 6.79677 6.15595 7.24577 6.42495 7.81177C6.71995 8.43477 7.15695 9.13877 7.71795 9.87277C8.32395 9.34777 8.95095 8.51277 9.23195 7.49677C8.67795 7.10877 8.14895 6.79677 7.66795 6.56777C7.10195 6.29977 6.65395 6.17377 6.33995 6.14777C6.2548 6.13813 6.16876 6.13947 6.08395 6.15177L5.99795 6.35877ZM8.34895 10.6488C9.13046 9.97253 9.72572 9.10736 10.078 8.13577C10.7889 8.71148 11.4563 9.33885 12.075 10.0128C11.0664 10.4082 10.1348 10.9767 9.32195 11.6928L9.29995 11.6718C8.95995 11.3304 8.64295 10.9894 8.34895 10.6488ZM18.491 7.53777C18.4226 7.6514 18.312 7.73325 18.1834 7.76531C18.0547 7.79738 17.9186 7.77704 17.805 7.70877C17.225 7.36077 16.425 7.31377 15.592 7.44577C14.8846 7.56249 14.1976 7.78004 13.552 8.09177C13.4932 8.12119 13.4292 8.13874 13.3636 8.14343C13.2981 8.14812 13.2323 8.13985 13.1699 8.11909C13.1076 8.09834 13.0499 8.06551 13.0002 8.02247C12.9506 7.97944 12.9099 7.92704 12.8805 7.86827C12.851 7.8095 12.8335 7.74552 12.8288 7.67997C12.8241 7.61442 12.8324 7.54859 12.8531 7.48623C12.8739 7.42388 12.9067 7.36622 12.9498 7.31656C12.9928 7.26689 13.0452 7.22619 13.104 7.19677C13.841 6.83981 14.6258 6.59124 15.434 6.45877C16.361 6.31177 17.444 6.32577 18.32 6.85177C18.4336 6.92008 18.5154 7.03072 18.5475 7.15936C18.5796 7.28801 18.5592 7.42412 18.491 7.53777ZM16.341 4.63077C16.2453 4.72644 16.1317 4.80233 16.0067 4.8541C15.8817 4.90588 15.7477 4.93253 15.6125 4.93253C15.3392 4.93253 15.0772 4.82398 14.884 4.63077C14.6907 4.43756 14.5822 4.17551 14.5822 3.90227C14.5822 3.62903 14.6907 3.36698 14.884 3.17377C15.0772 2.98056 15.3392 2.87202 15.6125 2.87202C15.8857 2.87202 16.1477 2.98056 16.341 3.17377C16.5342 3.36698 16.6427 3.62903 16.6427 3.90227C16.6427 4.17551 16.5342 4.43756 16.341 4.63077Z"
+                    fill="black" />
+                </g>
+              </svg>
+              <p>-10% sur votre commande en vous inscrivant à notre newsletter</p>
+            </li>
+
+
+            <li class="flex flex-row gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17" fill="none">
+                <g clip-path="url(#clip0_147_4590)">
+                  <path
+                    d="M6.50792 15.9142C7.89989 15.9142 9.0283 14.7516 9.0283 13.3175C9.0283 11.8833 7.89989 10.7207 6.50792 10.7207C5.11596 10.7207 3.98755 11.8833 3.98755 13.3175C3.98755 14.7516 5.11596 15.9142 6.50792 15.9142Z"
+                    stroke="black" />
+                  <path
+                    d="M15.4921 15.9142C16.884 15.9142 18.0124 14.7516 18.0124 13.3175C18.0124 11.8833 16.884 10.7207 15.4921 10.7207C14.1001 10.7207 12.9717 11.8833 12.9717 13.3175C12.9717 14.7516 14.1001 15.9142 15.4921 15.9142Z"
+                    stroke="black" />
+                  <path
+                    d="M13.5671 13.3628H8.43287M3.94213 13.316H2.75C2.38533 13.316 2.03559 13.1668 1.77773 12.9011C1.51987 12.6354 1.375 12.2751 1.375 11.8993V2.83268C1.375 2.45696 1.51987 2.09662 1.77773 1.83095C2.03559 1.56527 2.38533 1.41602 2.75 1.41602H12.8329C13.1975 1.41602 13.5473 1.56527 13.8051 1.83095C14.063 2.09662 14.2079 2.45696 14.2079 2.83268V11.3327M18.0579 13.316H19.25C19.6147 13.316 19.9644 13.1668 20.2223 12.9011C20.4801 12.6354 20.625 12.2751 20.625 11.8993V9.14252C20.625 8.84741 20.5356 8.55965 20.3693 8.31943L17.8282 4.6531C17.7009 4.46975 17.5329 4.32037 17.3382 4.21738C17.1436 4.11438 16.9278 4.06075 16.709 4.06093H14.2079"
+                    stroke="black" />
+                </g>
+
+              </svg>
+              <p>Livraison et retours GRATUITS</p>
+            </li>
+
+            <li class="flex flex-row gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path
+                  d="M14.8359 7.94796H10.9688V4.57296H9.70312C10.0949 4.04997 10.3054 3.41349 10.3027 2.76005C10.3027 1.78834 9.84287 0.875293 9.10269 0.377305L8.78868 0.166016L8.4747 0.377305C7.73438 0.875363 7.27471 1.78837 7.27471 2.76005C7.27208 3.4135 7.48264 4.04996 7.87444 4.57292H6.46875V7.94792H3.16406C2.62346 7.94854 2.10517 8.16356 1.72291 8.54583C1.34064 8.92809 1.12561 9.44638 1.125 9.98699V16.3128C1.12533 16.6111 1.24397 16.897 1.45487 17.1079C1.66578 17.3188 1.95173 17.4375 2.25 17.4378H15.75C16.0483 17.4375 16.3342 17.3188 16.5451 17.1079C16.756 16.897 16.8747 16.6111 16.875 16.3128V9.98702C16.8744 9.44641 16.6594 8.92813 16.2771 8.54586C15.8948 8.1636 15.3765 7.94857 14.8359 7.94796ZM8.78868 1.60137C9.03442 1.90667 9.17768 2.32088 9.17768 2.76009C9.17768 3.1993 9.03442 3.61354 8.78868 3.9188C8.54297 3.61354 8.39971 3.1993 8.39971 2.76005C8.39971 2.32081 8.54297 1.90667 8.78868 1.60137ZM7.59375 5.69796H9.84375V7.94796H7.59375V5.69796ZM2.25 9.98702C2.25028 9.74468 2.34667 9.51235 2.51803 9.34099C2.68939 9.16963 2.92172 9.07324 3.16406 9.07296H14.8359C15.0783 9.07324 15.3106 9.16963 15.482 9.34099C15.6533 9.51235 15.7497 9.74468 15.75 9.98702V11.0971L14.9906 11.4322C14.8421 11.4976 14.6816 11.5313 14.5194 11.5313C14.3571 11.5313 14.1966 11.4976 14.0481 11.4322L12.7266 10.8491L11.4047 11.4322C11.2562 11.4975 11.0957 11.5313 10.9334 11.5313C10.7712 11.5313 10.6107 11.4975 10.4621 11.4322L9.14062 10.8491L7.81875 11.4322C7.67023 11.4975 7.50974 11.5313 7.34748 11.5313C7.18522 11.5313 7.02473 11.4975 6.87621 11.4322L5.55469 10.8491L4.23306 11.4322C4.08454 11.4975 3.92405 11.5313 3.76179 11.5313C3.59953 11.5313 3.43904 11.4975 3.29052 11.4322L2.25 10.9732V9.98702ZM15.75 16.3128H2.25V12.2028L2.83634 12.4615C3.12797 12.5898 3.4431 12.656 3.76172 12.656C4.08033 12.656 4.39547 12.5898 4.6871 12.4615L5.55469 12.0787L6.42231 12.4615C6.71393 12.5898 7.02906 12.6561 7.34767 12.6561C7.66629 12.6561 7.98141 12.5898 8.27304 12.4615L9.14062 12.0787L10.0082 12.4615C10.2998 12.5898 10.6149 12.656 10.9335 12.656C11.2521 12.656 11.5673 12.5898 11.8589 12.4615L12.7266 12.0787L13.5941 12.4615C13.8858 12.5898 14.2009 12.6561 14.5195 12.6561C14.8381 12.6561 15.1532 12.5898 15.4448 12.4615L15.7504 12.3267L15.7507 16.3128H15.75Z"
+                  fill="black" />
+              </svg>
+              <p>Une PETITE surprise d’anniversaire chaque année</p>
+            </li>
+
+
+
+          </ul>
         </section>
 
-        <input type="text" placeholder="Adresse*" class="border p-2 rounded w-full focus:outline-none focus:ring-1 focus:ring-black">
-        <input type="email" placeholder="Email*" class="border p-2 rounded w-full focus:outline-none focus:ring-1 focus:ring-black">
-        <input type="tel" placeholder="Téléphone*" class="border p-2 rounded w-full focus:outline-none focus:ring-1 focus:ring-black">
-        <input type="password" placeholder="Mot de passe*" class="border p-2 rounded w-full focus:outline-none focus:ring-1 focus:ring-black">
+        <section class="md:w-1/2 p-8">
 
-        <p class="text-xs text-gray-500">
-          Les mots de passe doivent contenir au moins 8 caractères.
-        </p>
+          <form class="space-y-3 text-sm">
+            <ul class="flex flex-col gap-4">
 
-        <input type="date" placeholder="Date de naissance" class="border p-2 rounded w-full text-gray-500 focus:outline-none focus:ring-1 focus:ring-black">
+              <li>
+                <label for="nom" class="text-gray-500">Nom<span class="text-red">*</span></label>
+                <input id="nom" name="nom" type="text" class="bg-white border-1 border-black p-2 w-full" required>
+              </li>
 
-        <button type="submit" class="w-full bg-black text-white p-3 rounded font-medium hover:bg-gray-800 transition">
-          S’inscrire maintenant
-        </button>
-      </form>
+              <li>
+                <label for="prenom" class="text-gray-500">Prénom<span class="text-red">*</span></label>
+                <input id="prenom" name="prenom" type="text" class="bg-white border-1 border-black p-2 w-full" required>
+              </li>
+              <li>
+                <label for="Adresse" class="text-gray-500">Adresse<span class="text-red">*</span></label>
+                <input id="Adresse" name="Adresse" type="text" class="bg-white border-1 border-black p-2 w-full"
+                  required>
+              </li>
+              <li>
+                <label for="email" class="text-gray-500">Email<span class="text-red">*</span></label>
+                <input id="email" name="email" type="text" class="bg-white border-1 border-black p-2 w-full" required>
+              </li>
+              <li>
+                <label for="telephone" class="text-gray-500">Téléphone<span class="text-red">*</span></label>
+                <input id="telephone" name="telephone" type="text" class="bg-white border-1 border-black p-2 w-full"
+                  required>
+              </li>
+              <li>
+                <label for="mdp" class="text-gray-500">Mot de passe<span class="text-red">*</span></label>
+                <input id="mdp" name="mdp" type="text" class="bg-white border-1 border-black p-2 w-full" required>
+                <p class="text-xs text-gray-500">
+                  Les mots de passe doivent contenir au moins 8 caractères et être difficiles à deviner - les mots de
+                  passe couramment utilisés ou risqués ne sont pas autorisés.
+                </p>
+              </li>
+              <li>
+                <h4 class="">Surprise d’anniversaire (facultatif)</h4>
+                <p class="text-xs text-gray-500">On vous offre chaque année 1000 coins pour votre anniversaire</p>
+                <input type="date" placeholder="Date de naissance"
+                  class="border-b p-2 w-full text-gray-500 focus:outline-none focus:ring-1 focus:ring-black">
+              </li>
 
-      <footer class="text-center mt-3 text-sm">
-        <a href="#" class="underline">Se connecter avec un compte existant</a>
-      </footer>
-    </main>
-  </article>
-</section>
+              <button type="submit" class="w-full bg-black text-white p-3 font-medium hover:bg-gray-800 transition">
+                S’inscrire maintenant
+              </button>
+            </ul>
+          </form>
+
+          <section class="text-center mt-3 text-sm">
+            <a href="#" class="underline">Se connecter avec un compte existant</a>
+          </section>
+        </section>
+      </section>
+    </article>
+  </section>
 
 
 
