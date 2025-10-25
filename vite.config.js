@@ -4,7 +4,7 @@ import { resolve } from "path";
 
 export default defineConfig({
   plugins: [tailwindcss()],
-  base: "sae3.01", // ⚠️ Remplacer par le nom de votre dépôt GitHub
+  base: "sae3.01",
   build: {
     rollupOptions: {
       input: {
